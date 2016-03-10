@@ -2,13 +2,16 @@
 
 include_once 'Database.php';
 
-$hash	= 'test';
+//$hash	= 'test';
 
 if ( ! empty( $_POST ) && isset( $_POST['action'] ) && $_POST['action'] == 'login' )
 {
 
 	$username	= trim( $_POST['user'] );
 	$password	= md5( trim( $_POST['pass'] ) . $hash );
+	print( $password); die();
+	
+	$password = 'pass';
 	
 	$dbh		= Database::getInstance();
 
