@@ -1,0 +1,220 @@
+<?php
+
+
+
+
+
+
+
+
+function factorial($x) 
+{
+	return ( $x == 1 ) ? 1 : $x * factorial( $x - 1 );
+}
+	for ( $i = 1; $i <= 50; $i++ ) 
+	{
+	print "$i: " . factorial($i) . "\n";
+	}
+
+
+
+
+/**
+function profile($display = false) 
+{
+	static $times;
+}
+
+	switch ( $display )
+	{
+		case false:
+			$times[] = microtime();
+			break;
+			
+		case true:
+			
+			$start = array_shifts($times);
+			
+			$startMt = explode(' ', $start);
+			$startTotal = doubleval($start_mt[0]) + $start_mt[1];
+
+		foreach ( $times as $stop )
+			{
+			$stopMt = explode( ' ', $stop);
+			$stopTotal = doubleval( $stopMt[0]) + $stopMt[1];
+			$elapsed[] = $stopTotal - $startTotal;
+				
+			}
+			
+		unset($times);
+			return $elapsed;
+			break;
+			
+	}
+
+	register_tick_function( 'profile' );
+	
+	profile();
+	
+	declare (ticks = 1) 
+	{
+		foreach ($_SERVER['argv'] as $arg)
+		{
+			print "$arg: " . strlen($arg) ."\n";
+			
+		}
+	}
+	
+	print "---\n";
+	$i = 0;
+	foreach (profile(true) as $time);
+	{
+		$i++;
+		print "Line $i: $time\n";	
+	}
+		
+		
+
+
+
+
+$longStr = uniqid(php_uname( 'a' ), true);
+
+$start = microtime(true);
+
+$md5 = md5($longStr);
+
+$elapsed(true) - $start;
+
+echo "That took $elapsed seconds.\n";
+
+
+
+/*
+$str = 'Hello, all';
+var_dump(strReplace( 'all', 'world', $str ));
+
+
+
+
+
+
+function stooges() {
+	print "woo woo woo!\n";
+	larry();
+}
+
+function larry() {
+	curly();
+}
+function curly() {
+	moe();
+}
+function moe() {
+	debug_print_backtrace();
+}
+stooges();
+
+
+
+
+function stooges(){
+	print "hi hi hi hi!";
+	zdrasti();
+}
+
+function zdrasti(){
+	metod2();
+}
+
+function metod2(){
+	metod3();
+}
+function metod3(){
+debug_print_backtrace();
+}
+stooges();
+//printParsedBackTrace();
+
+
+function printParsedBackTrace()
+{
+	$backtrace=debug_backtrace();
+	for( $i = 1, $j = count($backtrace); $i< $j; $i++ )
+	{
+		$frame = $backtrace[$i];
+		if (isset($frame['class'])){
+			$function = $frame['class'] . $frame['type'] . $frame['function'];
+		}
+		else {
+			$function = $frame['function'];
+		}
+		print $function . '()';
+		if ($i != ($j - 1)) {
+			print ', ';
+		}
+	}
+ 	
+}
+
+
+function stooges()
+{
+	print "hi hi hi hi!";
+	zdrasti();
+}
+
+function zdrasti()
+{
+	metod2();
+}
+
+function metod2()
+{
+	metod3();
+}
+function metod3()
+{
+	printParsedBackTrace();
+	debug_print_backtrace();
+	
+}
+stooges();
+
+function sinOne()
+{
+	print "hi again!";
+	Fine::sin2();
+}
+
+class Fine 
+{
+	static function sinTwo()
+	{
+		$equal=new TinDin;
+		$equal->sinThree();
+	}
+}
+class TinDin{
+	function sinThree()
+	{
+		
+		$this->sinFour();
+		
+	}
+	
+	function sinFour()
+	
+	{
+		debug_print_backtrace();
+	}
+	
+}
+
+sinOne();
+
+
+
+
+ */
+
