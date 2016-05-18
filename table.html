@@ -1,0 +1,43 @@
+
+
+
+
+
+ <table width = "500""bgcolor = "orange" border = "2">
+	
+	<tr>
+		<th>S.N</th>
+		<th>Name</th>
+		<th>Password</th>
+		<th>Email</th>
+		<th>Edit</th>
+	</tr>
+	
+	<?php
+		$select = "SQL query";
+		
+		while ( $row = pdo fetch_assotiation)
+		
+		$user_id		= $row['id'];
+		$user_name		= $row['name'];
+		$user_pass		= $row['pass'];
+		$user_email		= $row['email'];
+	?>
+	<tr align "center">
+		<td><?php echo $user_id?></td>
+		<td><?php echo $user_name?></td>
+		<td><?php echo $user_pass?></td>
+		<td><?php echo $user_email?></td>
+		<td><a href = "table.php?edit = <?php echo $user_id; ?>">Edit</a></td>
+		<td><a href = "table.php?delete=<?php echo $user_id; ?>">Delete"</a></td>
+	</tr>
+	<?php } ?>
+	<!-- This one is a good practice that helps using tables and and save and fetch datas from a database!  !-->
+	
+	
+	
+	
+		</table>
+	</body>
+ </html>
+ 
