@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>min array</title>
+	<meta charset="utf-8">
+</head>
+	<body>
+		<script type="text/javascript">
+		var M = [9,11,7,34,65,76,66,99];
+		
+		Min = M[0];
+		Min_ind = 0;
+		
+		document.write('Аrray: <br>' + Min + " ");
+		
+		for(i=1; i<M.length; i++)
+			{
+			if (M[i] < Min ){
+				Min = M[i];
+				Min_ind = i;
+				}
+					document.write(M[i] + " " );
+			}
+			document.write('<br>Minimum: ' + Min );
+			document.write('<br>Index: ' + Min_ind);
+			
+	</script>
+	
+	<script type="text/javascript">
+	function openWindow()
+		{
+			msgWindow = open ("Function.html")
+		}
+	</script>
+		<input type = "button" value = "Call Function.html"
+					onclick = "openWindow()">
+</body>
+</html>

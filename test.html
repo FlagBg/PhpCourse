@@ -1,0 +1,62 @@
+<html>
+	<head>
+	<meta charset="UTF-8">
+		<title>Login</title>
+			<script language = "JavaScript">
+			
+				function checkEmail()
+				{
+					if( document.Login.userEmail.value == '' )
+					{
+						alert('Email is required');
+						return false;
+					}
+					else
+					{
+						return true;
+					}
+					
+				}
+			</script>
+			
+			<style type="text/css">
+				.downloadAppButton
+				{
+					background:grey;
+					width:80px;
+					height:30px;
+					text-align:center;
+					padding-top:5px;
+				}
+				
+				.downloadAppButton a
+				{
+					color:blue;
+					text-decoration:none;
+				}
+	/* 			<script src="js/javascript.js"></script>  */
+			</style>
+	</head>
+
+<body>
+	<h3>Login</h3>
+	<div>
+		<section class = "loginform">
+			<form name= "Login" onSubmit = "return checkEmail()" action="/" method="get">
+				<ul>
+					<input type="hidden" name="action" value="Login"/>
+					<label for="userEmail">Email:</label>
+					<input type="email" name="userEmail" id="userEmail"  placeholder = "username@email.com"><br>
+					<label for="password">Password:</label>
+					<input type="password" name="password" id="password" placeholder = "password" ><br>
+				
+					<label for="remember_me">Remember me</label><input type="checkbox" id="remember me" name="remember_me"></br>
+					<input type="button" name="Download" Value="Download"></button>
+					<input type="submit" name="submit" value="Login"><br>
+				</ul>
+			</form>
+		</section>
+	</div>
+	<div class="downloadAppButton"><a href="/">Download</a></div>
+</body>
+</html>
